@@ -1,0 +1,9 @@
+{
+    "buildCommand": "bun install",
+    "outputDirectory": ".",
+    "devCommand": "bun start",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+  

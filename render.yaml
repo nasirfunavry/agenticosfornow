@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: agenticos-app
+    env: node
+    branch: dev
+    repo: https://github.com/nasirfunavry/AgenticOS
+    buildCommand: bun install
+    startCommand: bun start
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: NODE_ENV
+        value: development
+
+      - key: TWITTER_CLIENT_ID
+        sync: false
+      - key: TWITTER_CLIENT_SECRET
+        sync: false
+
+      - key: ENCRYPTION_KEY
+        sync: false
+      - key: ENCRYPTION_SALT
+        sync: false
+      - key: ENCRYPTION_IV
+        sync: false
+
+      - key: CHAINGPT_API_KEY
+        sync: false
